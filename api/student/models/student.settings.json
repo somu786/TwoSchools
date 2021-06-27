@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "name": "Student",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "phone_number": {
+      "unique": true,
+      "type": "integer"
+    },
+    "email": {
+      "type": "string",
+      "unique": true
+    },
+    "teachers": {
+      "collection": "teacher",
+      "via": "students",
+      "dominant": true
+    }
+  }
+}

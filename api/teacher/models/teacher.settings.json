@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teachers",
+  "info": {
+    "name": "Teacher",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "teacher_id": {
+      "type": "integer"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "integer",
+      "required": false,
+      "unique": true
+    },
+    "email": {
+      "type": "string",
+      "unique": true
+    },
+    "students": {
+      "via": "teachers",
+      "collection": "student"
+    },
+    "subjects": {
+      "via": "teachers",
+      "collection": "subject"
+    }
+  }
+}
