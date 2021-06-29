@@ -27,9 +27,12 @@
       "unique": true
     },
     "teachers": {
-      "collection": "teacher",
       "via": "students",
-      "dominant": true
+      "collection": "teacher"
+    },
+    "principal_1s": {
+      "via": "students",
+      "collection": "principal-1"
     }
   }
 }

@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teacher2s",
+  "info": {
+    "name": "Teacher2",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Teacher_Name": {
+      "type": "string"
+    },
+    "Phone_number": {
+      "type": "integer"
+    },
+    "email": {
+      "type": "string"
+    },
+    "principal_2s": {
+      "via": "teacher_2s",
+      "collection": "principal-2"
+    },
+    "student_2s": {
+      "via": "teacher_2s",
+      "collection": "student2",
+      "dominant": true
+    }
+  }
+}

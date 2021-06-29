@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_principal2_ramus",
+  "info": {
+    "name": "Ramu",
+    "icon": "award",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Teacher2": {
+      "type": "component",
+      "repeatable": true,
+      "component": "teacher2.teacher2"
+    },
+    "Student2": {
+      "type": "component",
+      "repeatable": true,
+      "component": "student2.student2"
+    }
+  }
+}

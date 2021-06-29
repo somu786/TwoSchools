@@ -32,11 +32,16 @@
     },
     "students": {
       "via": "teachers",
-      "collection": "student"
+      "collection": "student",
+      "dominant": true
     },
     "subjects": {
       "via": "teachers",
       "collection": "subject"
+    },
+    "principal_1": {
+      "via": "teachers",
+      "collection": "principal-1"
     }
   }
 }

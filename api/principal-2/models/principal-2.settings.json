@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "principal_2s",
+  "info": {
+    "name": "Principal_2",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "principal_name": {
+      "type": "string"
+    },
+    "teacher_2s": {
+      "via": "principal_2s",
+      "collection": "teacher2",
+      "dominant": true
+    },
+    "student_2": {
+      "model": "student2"
+    },
+    "student_2s": {
+      "via": "principal_2s",
+      "collection": "student2"
+    }
+  }
+}

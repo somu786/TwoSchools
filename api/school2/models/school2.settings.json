@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "school2s",
+  "info": {
+    "name": "School2",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "School_Name": {
+      "type": "string"
+    },
+    "principal_2_": {
+      "model": "principal-2"
+    },
+    "teacher_2s": {
+      "collection": "teacher2"
+    },
+    "student_2s": {
+      "collection": "student2"
+    }
+  }
+}

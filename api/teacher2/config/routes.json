@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/teacher-2-s",
+      "handler": "teacher2.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/teacher-2-s/count",
+      "handler": "teacher2.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/teacher-2-s/:id",
+      "handler": "teacher2.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/teacher-2-s",
+      "handler": "teacher2.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/teacher-2-s/:id",
+      "handler": "teacher2.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/teacher-2-s/:id",
+      "handler": "teacher2.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

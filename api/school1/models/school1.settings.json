@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "school1s",
+  "info": {
+    "name": "School1",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "principal_1": {
+      "model": "principal-1"
+    },
+    "teachers": {
+      "collection": "teacher"
+    },
+    "students": {
+      "collection": "student"
+    }
+  }
+}

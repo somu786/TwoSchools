@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "subjects",
+  "collectionName": "principal_1s",
   "info": {
-    "name": "Subject",
+    "name": "Principal_1",
     "description": ""
   },
   "options": {
@@ -12,13 +12,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string",
-      "unique": true
+    "Name": {
+      "type": "string"
+    },
+    "students": {
+      "collection": "student",
+      "via": "principal_1s",
+      "dominant": true
     },
     "teachers": {
-      "via": "subjects",
       "collection": "teacher",
+      "via": "principal_1",
       "dominant": true
     }
   }
