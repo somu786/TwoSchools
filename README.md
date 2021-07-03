@@ -1,2 +1,1 @@
-# TwoSchools
-# Strapi
+# TwoSchools with Strapi
